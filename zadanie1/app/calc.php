@@ -18,19 +18,19 @@ if ( $il_rat == "") {
 }
 if ( $oprocentowanie == "") {
 	$messages [] = 'Nie podano oprocentowania';
+}
 
 if (empty( $messages )) {
 	
 	if (! is_numeric( $kwota_kredytu )) {
 		$messages [] = 'Pierwsza wartość nie jest liczbą całkowitą';
 	}
-	
 	if (! is_numeric( $il_rat )) {
 		$messages [] = 'Druga wartość nie jest liczbą całkowitą';
-	}	
+	}
 	if (! is_numeric( $oprocentowanie )) {
 		$messages [] = 'Trzecia wartość nie jest liczbą całkowitą';
-	}	
+	}
 }
 
 if (empty ( $messages )) {
