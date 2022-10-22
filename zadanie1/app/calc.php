@@ -11,10 +11,10 @@ if ( ! (isset($kwota_kredytu) && isset($il_rat) && isset($oprocentowanie))) {
 }
 
 if ( $kwota_kredytu == "") {
-	$messages [] = 'Nie podano liczby 1';
+	$messages [] = 'Nie podano kwoty kredytu';
 }
 if ( $il_rat == "") {
-	$messages [] = 'Nie podano liczby 2';
+	$messages [] = 'Nie podano ilosci rat';
 }
 
 if (empty( $messages )) {

@@ -19,7 +19,6 @@
 </form>	
 
 <?php
-//wyświeltenie listy błędów, jeśli istnieją
 if (isset($messages)) {
 	if (count ( $messages ) > 0) {
 		echo '<ol style="margin: 20px; padding: 10px 10px 10px 30px; border-radius: 5px; background-color: #f88; width:300px;">';
@@ -33,7 +32,7 @@ if (isset($messages)) {
 
 <?php if (isset($result)){ ?>
 <div style="margin: 20px; padding: 10px; border-radius: 5px; background-color: #ff0; width:300px;">
-<?php echo 'Wynik: '.$result; ?>
+<?php echo 'Kwota do splaty: '.$result; ?>
 </div>
 <?php } ?>
 
