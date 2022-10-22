@@ -16,6 +16,8 @@ if ( $kwota_kredytu == "") {
 if ( $il_rat == "") {
 	$messages [] = 'Nie podano ilosci rat';
 }
+if ( $oprocentowanie == "") {
+	$messages [] = 'Nie podano oprocentowania';
 
 if (empty( $messages )) {
 	
@@ -26,7 +28,9 @@ if (empty( $messages )) {
 	if (! is_numeric( $il_rat )) {
 		$messages [] = 'Druga wartość nie jest liczbą całkowitą';
 	}	
-
+	if (! is_numeric( $oprocentowanie )) {
+		$messages [] = 'Trzecia wartość nie jest liczbą całkowitą';
+	}	
 }
 
 if (empty ( $messages )) {
