@@ -28,19 +28,22 @@ if (empty( $messages )) {
 	if (! is_numeric( $il_rat )) {
 		$messages [] = 'Druga wartość nie jest liczbą całkowitą';
 	}
-	if (! is_numeric( $oprocentowanie )) {
-		$messages [] = 'Trzecia wartość nie jest liczbą całkowitą';
+	if (! is_float( $oprocentowanie )) {
+		$messages [] = 'Trzecia wartość nie jest liczbą zmiennoprzecinkowa';
 	}
 }
 
 if (empty ( $messages )) {
-	$odsetki = '';
+	$odsetki = 0;
+	$kredyt = 0;
 	$odsetki = floatval($odsetki);
+	$kredyt = floatval($kredyt);
 	$kwota_kredytu = intval($kwota_kredytu);
 	$il_rat = intval($il_rat);
 	$oprocentowanie = floatval($oprocentowanie);
 	
-	$odsetki = ($kwota_kredytu*(($oprocentowanie/$kwota_kredytu)*100));
-	$result = (($kwota_kredytu/$il_rat)+($odsetki))*$il_rat;
+	$odsetki = $kwota_kredytu*($oprocentowanie/100)*30.5/365;
+	$kredyt = $kwota_kredytu+($odsetki*$il_rat);
+	$result = round($kredyt, 2);
 }
 include 'calc_view.php';

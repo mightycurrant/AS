@@ -8,7 +8,7 @@
 <body>
 
 <form action="<?php print(_APP_URL);?>/app/calc.php" method="post">
-	<?php $kwota_kredytu='';$il_rat='';$oprocentowanie='';$il_rat_w_roku=''; ?>
+	<?php $kwota_kredytu='';$il_rat='';$oprocentowanie=''; ?>
 	<label for="id_kwota_kredytu">Kwota kredytu: </label>
 	<input id="id_kwota_kredytu" type="text" name="kwota_kredytu" value="<?php print($kwota_kredytu); ?>" /><br />
 	<label for="id_il_rat">Ilosc rat: </label>
@@ -32,7 +32,7 @@ if (isset($messages)) {
 
 <?php if (isset($result)){ ?>
 <div style="margin: 20px; padding: 10px; border-radius: 5px; background-color: #ff0; width:300px;">
-<?php echo 'Kwota do splaty: '.$result; ?>
+<?php echo 'Kwota do splaty: '.$result.' PLN'; ?>
 </div>
 <?php } ?>
 
