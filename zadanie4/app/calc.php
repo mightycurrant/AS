@@ -21,7 +21,7 @@ function validate(&$form,&$infos,&$msgs){
 	if (count ($msgs) == 0) {
 		if (! is_numeric( $form['kwota_kredytu'] )) $msgs [] = 'Pierwsza wartość nie jest liczbą całkowitą';
 		if (! is_numeric( $form['il_rat'] )) $msgs [] = 'Druga wartość nie jest liczbą całkowitą';
-		if (! is_numeric( $form['oprocentowanie'] )) $msgs [] = 'Trzecia wartość nie jest liczbą zmiennoprzecinkowa';
+		if (! is_numeric( $form['oprocentowanie'] )) $msgs [] = 'Trzecia wartość nie jest liczbą zmiennoprzecinkową';
 	}
 
 	if (count ($msgs) > 0) return false;
@@ -70,4 +70,4 @@ $smarty->assign('result',$result);
 $smarty->assign('messages',$msgs);
 $smarty->assign('infos',$infos);
 
-$smarty->display(_ROOT_PATH.'/app/calc.html');
+$smarty->display(_ROOT_PATH.'/app/calc.tpl');
