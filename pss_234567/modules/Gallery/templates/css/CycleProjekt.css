@@ -1,0 +1,6 @@
+/* height and width should be the same as the thumbnail sizes */
+#slides {
+  width: 2000px;
+  height: 600px;
+  text-align: center;
+}
