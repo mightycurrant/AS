@@ -1,7 +1,13 @@
-Funkcja akcji "action_albumListPart()" została zmieniona, żeby już nie wysyłała formularza i znajduje się w pliku AlbumListCtrl.class.php pod ścieżką pss_234\app\controllers\AlbumListCtrl.class.php
+Zostały dodane dwie galerie z nowymi szablonami galerii.
 
-Funkcja "ajaxPostForm()" została użyta do wysyłania danych formularza podanego adresu url i zamienia zawartość elementu nastronie. Ta funkcjaznajduje się w pliku AlbumListFullPage.tpl pod ścieżką pss_234\app\views\AlbumListFullPage.tpl
+Strona podsumowania aktualności posiada drugą galerię i zawiera odnośniki do szczegółów aktualności.
 
-Funkcja "confirmLink()" została użyta i znajduje się w pliku AlbumListTable.tpl pod ścieżką pss_234\app\views\AlbumListTable.tpl
+Został dodane 4 artykuły, które można zobaczyć w aktualnościach.
 
-Plik z funkcjami AJAX znajduje się pod ścieżką pss_234\public\js\functions.js
+Strona główna posiada galerię
+
+Strona z kontaktem została zaktualizowana o mapę i dane kontaktowe.
+
+Został dodany stylesheet.
+
+W folderze głównym jest pokazany zrzuty ekranu ze strukturą systemu i działanie systemu.
